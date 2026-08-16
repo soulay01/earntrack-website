@@ -1,0 +1,48 @@
+# EarnTrack robots.txt
+# https://earntrack.de
+
+# !!! WICHTIG — Cloudflare-Konflikt !!!
+# Cloudflare prependet eine "Managed robots.txt" mit Disallow-Regeln fuer
+# GPTBot, Google-Extended, CCBot, ClaudeBot, Applebot-Extended u. a.
+# Diese Regeln stehen VOR den Allow-Regeln hier und gewinnen deshalb.
+# → Cloudflare Dashboard: "Managed robots.txt"/AI-Bot-Blockierung deaktivieren
+#   bzw. diese Crawler dort erlauben, sonst greifen die Allow-Regeln hier nicht.
+# Verifizieren: curl https://earntrack.de/robots.txt
+
+# AI crawlers - full access for training/indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# All other crawlers
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://earntrack.de/sitemap.xml

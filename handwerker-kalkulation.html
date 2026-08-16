@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulation für Handwerker: Stundensatz &amp; Gewinn berechnen</title>
+  <meta name="description" content="Kalkulation für Handwerksbetriebe: Stundensatz berechnen, Zuschlagskalkulation, Vor- und Nachkalkulation – und wie EarnTrack Profit pro Auftrag automatisch zeigt.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://earntrack.de/handwerker-kalkulation">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="EarnTrack">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:url" content="https://earntrack.de/handwerker-kalkulation">
+  <meta property="og:title" content="Kalkulation für Handwerker: Stundensatz &amp; Gewinn berechnen">
+  <meta property="og:description" content="So kalkulierst du als Handwerksbetrieb richtig: Stundensatz, Zuschläge, Vor- und Nachkalkulation – und wo du Gewinn verlierst.">
+  <meta property="og:image" content="https://earntrack.de/og-image.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kalkulation für Handwerker: Stundensatz und Gewinn berechnen">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kalkulation für Handwerker: Stundensatz &amp; Gewinn berechnen">
+  <meta name="twitter:description" content="So kalkulierst du als Handwerksbetrieb richtig: Stundensatz, Zuschläge, Vor- und Nachkalkulation – und wo du Gewinn verlierst.">
+  <meta name="twitter:image" content="https://earntrack.de/og-image.webp">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-icon-new.png">
+  <link rel="preload" href="/assets/fonts/bricolage-grotesque-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    /* Self-hosted fonts — kein Drittanbieter-Request, keine IP-Übertragung an Google. */
+    @font-face {
+      font-family: 'Bricolage Grotesque';
+      font-style: normal;
+      font-weight: 400 800;
+      font-display: swap;
+      src: url('/assets/fonts/bricolage-grotesque-var.woff2') format('woff2-variations'), url('/assets/fonts/bricolage-grotesque-var.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 400 800;
+      font-display: swap;
+      src: url('/assets/fonts/plus-jakarta-sans-var.woff2') format('woff2-variations'), url('/assets/fonts/plus-jakarta-sans-var.woff2') format('woff2');
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Kalkulation für Handwerker: Stundensatz & Gewinn berechnen",
+    "description": "So kalkulierst du als Handwerksbetrieb richtig: Stundensatz, Zuschläge, Vor- und Nachkalkulation – und wo du Gewinn verlierst.",
+    "datePublished": "2026-08-16",
+    "dateModified": "2026-08-16",
+    "author": { "@type": "Organization", "name": "EarnTrack" },
+    "publisher": { "@type": "Organization", "name": "EarnTrack", "url": "https://earntrack.de" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie berechne ich meinen Stundensatz als Handwerker?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Klassisch über die Zuschlagskalkulation: Summiere die Lohnkosten (Bruttogehalt plus Arbeitgeberanteile, Urlaub, Krankheit) mit den Betriebskosten (Fahrzeuge, Werkzeug, Miete, Versicherungen) und einem Gewinnzuschlag. Teile das durch die verrechenbaren Stunden im Jahr (Faustregel: nur 1.300–1.500 der 2.000 Jahresstunden sind auf der Baustelle abrechenbar)." }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen Vor- und Nachkalkulation?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Die Vorkalkulation schätzt Kosten vor dem Angebot und bestimmt den Angebotspreis. Die Nachkalkulation vergleicht nach Abschluss die tatsächlich angefallenen Stunden und Materialkosten mit der Kalkulation – sie zeigt, ob der Auftrag wirklich Gewinn gemacht hat. EarnTrack macht diesen Vergleich automatisch mit dem Profit Score (A+ bis F)." }
+      },
+      {
+        "@type": "Question",
+        "name": "Warum rechnet sich ein Auftrag trotz gutem Angebot nicht?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Häufigste Ursachen: zu viele Stunden (unrealistische Vorkalkulation), Pausen und Fahrzeiten nicht eingerechnet, Materialnachschlag vergessen oder zu niedriger Stundensatz. Der Profit Score von EarnTrack zeigt pro Auftrag, wo die Abweichung entsteht." }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Kalkulationssoftware brauche ich als Handwerksbetrieb?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Für kleine und mittlere Betriebe reicht eine Software, die Kostenvoranschläge, Zeiterfassung und Nachkalkulation verbindet – damit entstehen Angebot und Profit-Analyse aus denselben Daten. EarnTrack startet bei 27,99 € pro Monat und zeigt die Profitabilität pro Auftrag automatisch an." }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-dark: #09180F; --bg-dark-2: #0D2018; --bg-light: #F6FAF6;
+      --accent: #10D6A3; --accent-deep: #087F63;
+      --ink: #0B1F1A; --ink-60: rgba(11,31,26,0.6);
+      --f-head: 'Bricolage Grotesque', system-ui, sans-serif;
+      --f-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--f-body); background: var(--bg-light); color: var(--ink); -webkit-font-smoothing: antialiased; line-height: 1.7; }
+    h1, h2, h3 { font-family: var(--f-head); letter-spacing: -0.02em; line-height: 1.1; }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); }
+
+    .nav { position: sticky; top: 0; z-index: 100; height: 64px; background: rgba(9,24,15,0.92); backdrop-filter: blur(16px); display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .nav-inner { max-width: 960px; width: 100%; margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; align-items: center; gap: 9px; font-size: 16px; font-weight: 800; text-decoration: none; color: #fff; }
+    .nav-logo img { width: 30px; height: 30px; border-radius: 8px; }
+    .nav-logo span span { color: var(--accent); }
+    .nav-cta { background: var(--accent); color: var(--ink); padding: 9px 20px; border-radius: 9px; font-weight: 800; font-size: 13px; text-decoration: none; }
+
+    header.page { background: var(--bg-dark); color: #fff; padding: clamp(56px, 8vw, 96px) 0 clamp(40px, 6vw, 72px); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
+    .eyebrow::before { content: ''; width: 24px; height: 2px; background: var(--accent); }
+    h1 { font-size: clamp(1.9rem, 4.5vw, 3rem); font-weight: 800; margin-bottom: 18px; text-wrap: balance; }
+    header.page p { font-size: 17px; color: rgba(255,255,255,0.7); max-width: 640px; }
+
+    main { padding: clamp(40px, 6vw, 72px) 0; }
+    section { margin-bottom: clamp(40px, 6vw, 64px); }
+    h2 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); font-weight: 800; margin-bottom: 16px; }
+    h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+    main p { color: rgba(11,31,26,0.78); max-width: 70ch; margin-bottom: 14px; }
+    main ul { color: rgba(11,31,26,0.78); max-width: 70ch; margin: 0 0 14px; padding-left: 22px; }
+    main li { margin-bottom: 8px; }
+    main a { color: var(--accent-deep); font-weight: 700; }
+
+    .disclosure { background: rgba(16,214,163,0.07); border: 1px solid rgba(16,214,163,0.28); border-radius: 12px; padding: 16px 20px; margin-bottom: clamp(36px, 5vw, 52px); font-size: 13.5px; color: var(--ink-60); max-width: none; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+    .table-wrap { overflow-x: auto; border: 1px solid rgba(11,31,26,0.1); border-radius: 16px; background: #fff; box-shadow: 0 4px 24px rgba(11,31,26,0.06); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+    th, td { padding: 13px 16px; text-align: left; border-bottom: 1px solid rgba(11,31,26,0.07); vertical-align: top; }
+    thead th { font-family: var(--f-head); font-size: 15px; background: var(--bg-dark); color: #fff; }
+    tbody th { font-weight: 700; color: var(--ink); background: rgba(11,31,26,0.025); white-space: nowrap; }
+    tbody tr:last-child th, tbody tr:last-child td { border-bottom: none; }
+
+    .card { background: #fff; border: 1px solid rgba(11,31,26,0.09); border-radius: 14px; padding: 22px; box-shadow: 0 2px 12px rgba(11,31,26,0.04); margin-bottom: 14px; }
+    .card h3 { margin-bottom: 8px; }
+    .card p, .card ul { font-size: 14.5px; }
+
+    .steps { list-style: none; padding: 0; counter-reset: step; max-width: none; }
+    .steps li { counter-increment: step; position: relative; padding-left: 44px; margin-bottom: 16px; }
+    .steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--ink); font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+
+    .faq details { background: #fff; border: 1px solid rgba(11,31,26,0.1); border-radius: 12px; margin-bottom: 10px; }
+    .faq summary { padding: 16px 20px; cursor: pointer; font-weight: 700; font-family: var(--f-head); list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq details p { padding: 0 20px 16px; font-size: 14.5px; }
+
+    .cta-box { background: var(--bg-dark); border-radius: 20px; padding: clamp(32px, 5vw, 52px); text-align: center; color: #fff; }
+    .cta-box h2 { color: #fff; }
+    .cta-box p { color: rgba(255,255,255,0.65); max-width: 480px; margin: 0 auto 24px; }
+    .btn { display: inline-block; background: var(--accent); color: var(--ink); padding: 14px 30px; border-radius: 11px; font-weight: 800; font-size: 15px; text-decoration: none; }
+
+    .hub-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+    .hub-links a { display: block; background: #fff; border: 1px solid rgba(11,31,26,0.09); border-radius: 10px; padding: 14px 16px; font-size: 14px; font-weight: 700; color: var(--ink); text-decoration: none; transition: border-color 0.2s; }
+    .hub-links a:hover { border-color: var(--accent); }
+
+    .disclaimer { font-size: 12px; color: var(--ink-60); line-height: 1.6; max-width: none; }
+    footer { background: var(--bg-dark); color: rgba(255,255,255,0.5); padding: 32px 0; font-size: 13px; }
+    footer .container { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    footer a { color: rgba(255,255,255,0.7); text-decoration: none; margin-left: 16px; }
+    footer a:hover { color: #fff; }
+    @media (max-width: 640px) { footer .container { flex-direction: column; } footer a { margin: 0 16px 0 0; } }
+  </style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Hauptnavigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><img src="/logo.webp" alt="EarnTrack Logo" width="30" height="30"><span>Earn<span>Track</span></span></a>
+    <a href="https://app.earntrack.de/demo" class="nav-cta">14 Tage testen</a>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="container">
+    <div class="eyebrow">Ratgeber · Kalkulation</div>
+    <h1>Kalkulation für Handwerker: Stundensatz &amp; Gewinn richtig berechnen</h1>
+    <p>Wer kalkuliert, weiß vorher, was ein Auftrag kostet – und nachher, ob er Gewinn brachte. Hier erklären wir Stundensatz, Zuschlagskalkulation und Nachkalkulation Schritt für Schritt.</p>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section aria-label="Transparenz-Hinweis">
+      <div class="disclosure">
+        <strong>Transparenz-Hinweis:</strong> Dieser Artikel wurde von EarnTrack erstellt und
+        bewertet auch das eigene Produkt. EarnTrack ist eine App + Web-Anwendung für Handwerker
+        und Selbstständige. Weitere Informationen zu EarnTrack findest du auf
+        <a href="/">earntrack.de</a> und im
+        <a href="/handwerker-software-vergleich">Handwerker-Software-Vergleich</a>.
+      </div>
+    </section>
+
+    <section aria-labelledby="was-ist">
+      <h2 id="was-ist">Was ist Kalkulation im Handwerk?</h2>
+      <p>Kalkulation bedeutet: <strong>Kosten vor dem Angebot schätzen</strong> (Vorkalkulation)
+      und <strong>nach dem Auftrag mit den Ist-Kosten abgleichen</strong> (Nachkalkulation).
+      Aus der Vorkalkulation entsteht der Angebotspreis; die Nachkalkulation zeigt, ob der
+      Auftrag am Ende wirklich Gewinn gemacht hat.</p>
+      <p>Im Handwerk ist die <strong>Zuschlagskalkulation</strong> der Standard. Die einzelnen
+      Kostenpositionen – Material, Lohn, Fahrzeug, Werkzeug – werden zunächst getrennt erfasst
+      und um Zuschläge für Gemeinkosten (Betriebskosten wie Miete, Strom, Versicherung),
+      Wagnis und Gewinn erhöht. Wer diese Zuschläge weglässt oder zu niedrig ansetzt, kalkuliert
+      jeden Auftrag unter Wert.</p>
+      <ul>
+        <li><strong>Vorkalkulation:</strong> geplante Kosten + Gewinnzuschlag → Angebotspreis</li>
+        <li><strong>Nachkalkulation:</strong> tatsächlich angefallene Stunden &amp; Material im Vergleich zur Vorkalkulation → Gewinn oder Verlust</li>
+        <li><strong>Angebotskalkulation:</strong> die kalkulierte Preisbasis, die dem Kunden als Angebot oder Kostenvoranschlag vorgelegt wird</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="stundensatz">
+      <h2 id="stundensatz">Der Stundensatz: Das Herzstück jeder Kalkulation</h2>
+      <p>Der größte Fehler vieler Handwerksbetriebe ist ein Stundensatz, der nur das
+      Bruttogehalt abdeckt. Ein korrekter Stundensatz berücksichtigt alle Kosten, die eine
+      Arbeitsstunde tatsächlich verursacht:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Kostenblock</th>
+              <th scope="col">Beispiele</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Lohnkosten</th>
+              <td>Bruttogehalt, Arbeitgeberanteile (Sozialversicherung), Urlaub, Feiertage, Krankheit</td>
+            </tr>
+            <tr>
+              <th scope="row">Fahrzeug- &amp; Maschinenkosten</th>
+              <td>Leasing/Finanzierung, Treibstoff, Wartung, Abschreibung von Werkzeug und Maschinen</td>
+            </tr>
+            <tr>
+              <th scope="row">Gemeinkosten</th>
+              <td>Miete, Strom, Versicherungen, Telefon, Software, Verwaltung</td>
+            </tr>
+            <tr>
+              <th scope="row">Wagnis &amp; Gewinn</th>
+              <td>Risikoaufschlag (z. B. Nachbesserung) und der Gewinn, den der Betrieb braucht</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:14px"><strong>Die Faustregel:</strong> Von den rund 2.000
+      Jahresarbeitsstunden sind nur <strong>etwa 1.300–1.500 Stunden</strong> auf der Baustelle
+      abrechenbar – der Rest geht für Verwaltung, Fahrzeiten, Urlaub und Krankheit drauf.
+      Rechnest du mit allen 2.000 Stunden, ist dein Stundensatz zu niedrig und jeder Auftrag
+      rechnet sich schlechter, als er aussieht.</p>
+    </section>
+
+    <section aria-labelledby="schritte">
+      <h2 id="schritte">So kalkulierst du einen Auftrag in 6 Schritten</h2>
+      <ol class="steps">
+        <li><strong>Leistung bestimmen:</strong> Was genau wird gemacht – Leistungsbeschreibung und Mengen festlegen.</li>
+        <li><strong>Material erfassen:</strong> Materialliste mit Einzelpreisen, Lieferantenpreisen und Verschnitt (Faustregel: 5–10 % Aufschlag).</li>
+        <li><strong>Stunden schätzen:</strong> Arbeitsstunden je Gewerk realistisch schätzen – auf Basis früherer, ähnlicher Aufträge.</li>
+        <li><strong>Stundensatz ansetzen:</strong> Den korrekt kalkulierten Stundensatz (siehe oben) auf die Stunden rechnen.</li>
+        <li><strong>Zuschläge &amp; Gewinn:</strong> Gemeinkostenzuschlag, Wagnis und Gewinnzuschlag aufschlagen – sonst arbeitest du unter deinen Selbstkosten.</li>
+        <li><strong>Angebot/Kostenvoranschlag erstellen:</strong> Die Summe wird zum Angebot – mit Leistungsverzeichnis, das der Kunde nachvollziehen kann.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="nachkalkulation">
+      <h2 id="nachkalkulation">Nachkalkulation: Wo dein Gewinn verloren geht</h2>
+      <p>Viele Betriebe kalkulieren vorher sorgfältig, prüfen aber nie nachher, ob der Auftrag
+      wirklich Gewinn gebracht hat. Genau hier liegt das Geld. Die Nachkalkulation vergleicht
+      die tatsächlich erfassten Stunden und Materialkosten mit der Vorkalkulation – und zeigt
+      Abweichungen:</p>
+      <ul>
+        <li><strong>Zu viele Stunden:</strong> Die Vorkalkulation war zu optimistisch oder die Zeiterfassung lückenhaft.</li>
+        <li><strong>Pausen &amp; Fahrzeiten fehlen:</strong> Nicht einkalkulierte Zeiten fressen die Marge.</li>
+        <li><strong>Material teurer:</strong> Preiserhöhungen oder Nachkäufe wurden nicht weitergereicht.</li>
+        <li><strong>Stundensatz zu niedrig:</strong> Die Basis stimmt nicht – alle Aufträge rechnen sich schlechter.</li>
+      </ul>
+      <p>Erst wer nachkalkuliert, weiß, welche Aufträge sich lohnen und wo er den Preis anpassen
+      sollte. Genau dafür ist der <strong>Profit Score von EarnTrack</strong> gedacht: Er bewertet
+      jeden Auftrag, Termin und Mitarbeiter mit einer Note von <strong>A+ bis F</strong> und liefert
+      eine Ursachenanalyse – zum Beispiel „zu viele Stunden" oder „zu niedrig kalkuliert".</p>
+    </section>
+
+    <section aria-labelledby="earntrack">
+      <h2 id="earntrack">So hilft EarnTrack bei der Kalkulation</h2>
+      <div class="card">
+        <h3>Kostenvoranschlag &amp; Angebot</h3>
+        <p>Leistungen, Material und Stundensatz werden zum sauberen Kostenvoranschlag – direkt per E-Mail versendbar, ohne Excel.</p>
+      </div>
+      <div class="card">
+        <h3>Zeiterfassung als Datenbasis</h3>
+        <p>Die mobil erfassten Stunden landen automatisch beim Projekt – damit stimmt die Nachkalkulation, weil die Ist-Zeiten echt sind.</p>
+      </div>
+      <div class="card">
+        <h3>Profit Score A+ bis F</h3>
+        <p>Automatische Nachkalkulation: Jeder Auftrag erhält eine Profit-Note mit Ursachenanalyse – in allen Plänen enthalten, ohne Aufpreis.</p>
+      </div>
+      <div class="card">
+        <h3>Stundensatz-Transparenz</h3>
+        <p>Weil Stunden und Erlös pro Projekt gegenüberstehen, siehst du, ob dein Stundensatz reicht – oder ob du nachkalkulieren musst.</p>
+      </div>
+      <p>
+        EarnTrack startet bei <strong>27,99 € pro Monat</strong> (Aktionspreis statt 39,99 €),
+        ist monatlich kündbar und enthält Profit Score, Zeiterfassung, Angebote und Rechnungen
+        in allen Plänen. Weitere Details im
+        <a href="/handwerker-software-vergleich">Handwerker-Software-Vergleich</a>.
+      </p>
+    </section>
+
+    <section aria-labelledby="weitere-ratgeber">
+      <h2 id="weitere-ratgeber">Weitere Ratgeber</h2>
+      <div class="hub-links">
+        <a href="/kostenvoranschlag-handwerker">Kostenvoranschlag für Handwerker</a>
+        <a href="/stundenzettel-app-handwerker">Stundenzettel App für Handwerker</a>
+        <a href="/zeiterfassung-handwerker">Zeiterfassung für Handwerker</a>
+        <a href="/lagerverwaltung-handwerker">Lagerverwaltung für Handwerker</a>
+        <a href="/handwerker-software-vergleich">Handwerker-Software-Vergleich</a>
+        <a href="/plancraft-alternative">Plancraft Alternative</a>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-h">
+      <h2 id="faq-h">Häufige Fragen zur Kalkulation</h2>
+      <details>
+        <summary>Wie berechne ich meinen Stundensatz als Handwerker?</summary>
+        <p>Klassisch über die Zuschlagskalkulation: Summiere die Lohnkosten (Bruttogehalt plus Arbeitgeberanteile, Urlaub, Krankheit) mit den Betriebskosten (Fahrzeuge, Werkzeug, Miete, Versicherungen) und einem Gewinnzuschlag. Teile das durch die verrechenbaren Stunden im Jahr (Faustregel: nur 1.300–1.500 der 2.000 Jahresstunden sind auf der Baustelle abrechenbar).</p>
+      </details>
+      <details>
+        <summary>Was ist der Unterschied zwischen Vor- und Nachkalkulation?</summary>
+        <p>Die Vorkalkulation schätzt Kosten vor dem Angebot und bestimmt den Angebotspreis. Die Nachkalkulation vergleicht nach Abschluss die tatsächlich angefallenen Stunden und Materialkosten mit der Kalkulation – sie zeigt, ob der Auftrag wirklich Gewinn gemacht hat. EarnTrack macht diesen Vergleich automatisch mit dem Profit Score (A+ bis F).</p>
+      </details>
+      <details>
+        <summary>Warum rechnet sich ein Auftrag trotz gutem Angebot nicht?</summary>
+        <p>Häufigste Ursachen: zu viele Stunden (unrealistische Vorkalkulation), Pausen und Fahrzeiten nicht eingerechnet, Materialnachschlag vergessen oder zu niedriger Stundensatz. Der Profit Score von EarnTrack zeigt pro Auftrag, wo die Abweichung entsteht.</p>
+      </details>
+      <details>
+        <summary>Welche Kalkulationssoftware brauche ich als Handwerksbetrieb?</summary>
+        <p>Für kleine und mittlere Betriebe reicht eine Software, die Kostenvoranschläge, Zeiterfassung und Nachkalkulation verbindet – damit entstehen Angebot und Profit-Analyse aus denselben Daten. EarnTrack startet bei 27,99 € pro Monat und zeigt die Profitabilität pro Auftrag automatisch an.</p>
+      </details>
+      <details>
+        <summary>Was ist der Unterschied zwischen Angebot und Kostenvoranschlag?</summary>
+        <p>Ein Angebot ist rechtlich verbindlich – der Preis gilt, wenn der Kunde zusagt. Ein Kostenvoranschlag ist nur dann verbindlich, wenn ausdrücklich so vereinbart; ohne Vereinbarung gilt er als unverbindlich. Mehr dazu im <a href="/kostenvoranschlag-handwerker">Kostenvoranschlag-Ratgeber</a>.</p>
+      </details>
+    </section>
+
+    <section>
+      <div class="cta-box">
+        <h2>Überzeug dich selbst.</h2>
+        <p>Teste EarnTrack 14 Tage kostenlos – voller Funktionsumfang, keine Zahlungsdaten, jederzeit kündbar.</p>
+        <a href="https://app.earntrack.de/demo" class="btn">14 Tage kostenlos testen</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <span>© 2026 EarnTrack. Alle Rechte vorbehalten.</span>
+    <span>
+      <a href="/">Startseite</a>
+      <a href="/impressum">Impressum</a>
+      <a href="/datenschutz">Datenschutz</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>

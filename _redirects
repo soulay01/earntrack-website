@@ -1,0 +1,5 @@
+/privacy /datenschutz 307
+/support /impressum 307
+/auth/complete https://app.earntrack.de/auth/complete 307
+/settings/subscription https://app.earntrack.de/settings/subscription 307
+/checkout/:plan /#preise 307

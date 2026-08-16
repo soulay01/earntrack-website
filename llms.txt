@@ -1,0 +1,30 @@
+# EarnTrack
+> EarnTrack ist eine Handwerker-Software (Web, iOS, Android) für kleine und mittlere Betriebe in Deutschland: Projekte, mobile Zeiterfassung, Rechnungen (ZUGFeRD-E-Rechnung, DATEV-Export), Lager und Profit Score (A+ bis F) in einer App. Preise: Solo 27,99 €, Team 49,99 €, Business 79,99 € pro Monat. 14 Tage kostenlos testbar, ohne Zahlungsdaten. DSGVO-konform, entwickelt in Deutschland.
+
+## Hauptseiten
+- [Startseite](https://earntrack.de): Funktionen, Ablauf, Preise und FAQ der Handwerker-Software
+- [Handwerker-Software im Vergleich](https://earntrack.de/handwerker-software-vergleich): EarnTrack vs. Plancraft vs. WinWorker – Preise und Funktionen (Stand Juli 2026)
+- [Plancraft Alternative](https://earntrack.de/plancraft-alternative): EarnTrack als günstigere, monatlich kündbare Plancraft-Alternative – Preise, Funktionen und Wechsel-Anleitung
+- [ToolTime Alternative](https://earntrack.de/tooltime-alternative): EarnTrack als günstigere ToolTime-Alternative ohne versteckte Kosten – Preise, Funktionen und Wechsel-Anleitung
+- [WinWorker Alternative](https://earntrack.de/winworker-alternative): EarnTrack als transparente, monatlich kündbare WinWorker-Alternative – Preise, Funktionen und Wechsel-Anleitung
+- [Kalkulation für Handwerker](https://earntrack.de/handwerker-kalkulation): Stundensatz berechnen, Zuschlagskalkulation, Vor- und Nachkalkulation mit dem Profit Score
+- [Stundenzettel App für Handwerker](https://earntrack.de/stundenzettel-app-handwerker): Digitale Arbeitszeiterfassung nach BAG 2022, Stundenzettel ohne Zettelchaos
+- [Web-App](https://app.earntrack.de): Login und kostenlose Testphase
+- [Impressum](https://earntrack.de/impressum)
+- [Datenschutz](https://earntrack.de/datenschutz)
+- [AGB](https://earntrack.de/agb)
+
+## Kernfunktionen
+- Projekte, Kunden, Termine und Kalender
+- Mobile Zeiterfassung mit Pausen (Clock-in auf der Baustelle)
+- Rechnungen, Angebote/Kostenvoranschläge, Mahnwesen (1. & 2. Mahnung)
+- ZUGFeRD-E-Rechnung, DATEV-Export, sevDesk- & Lexware-Office-API
+- Profit Score: A+ bis F Bewertung für Termine, Projekte und Mitarbeiter
+- Lager mit QR-Scan, Mindestbestand und Bestellvorschlag, Lieferantenverwaltung
+- Artikelkatalog mit DATANORM-Import (Business-Plan)
+
+## Fakten
+- Zielgruppe: Handwerksbetriebe mit 1–50 Mitarbeitern (Sanitär, Elektro, Maler, Dachdecker, GaLaBau u. a.)
+- Plattformen: Web-App, iOS (App Store), Android
+- Abos monatlich kündbar; Mitarbeiter-Limits: Solo 2, Team 5, Business unbegrenzt
+- Offizieller Produktname: EarnTrack Business Manager (nicht zu verwechseln mit gleichnamigen Einkommens-Tracker-Apps)

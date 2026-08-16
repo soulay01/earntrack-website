@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutz – EarnTrack</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Datenschutzerklärung von EarnTrack: welche personenbezogenen Daten wir verarbeiten, zu welchem Zweck und auf welcher Rechtsgrundlage.">
+  <link rel="canonical" href="https://earntrack.de/datenschutz">
+  <meta name="theme-color" content="#022C22">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-icon-new.png">
+  <style>
+    /* Self-hosted fonts — kein Drittanbieter-Request. */
+    @font-face {
+      font-family: 'Bricolage Grotesque';
+      font-style: normal;
+      font-weight: 400 800;
+      font-display: swap;
+      src: url('/assets/fonts/bricolage-grotesque-var.woff2') format('woff2-variations'), url('/assets/fonts/bricolage-grotesque-var.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 400 800;
+      font-display: swap;
+      src: url('/assets/fonts/plus-jakarta-sans-var.woff2') format('woff2-variations'), url('/assets/fonts/plus-jakarta-sans-var.woff2') format('woff2');
+    }
+  </style>
+  <style>
+    :root {
+      --bg-dark:    #09180F;
+      --bg-dark-2:  #0D2018;
+      --bg-light:   #F6FAF6;
+      --accent:     #10D6A3;
+      --ink:        #0B1F1A;
+      --ink-60:     rgba(11,31,26,0.6);
+      --f-head: 'Bricolage Grotesque', system-ui, sans-serif;
+      --f-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --nav-h: 64px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--f-body); background: var(--bg-light); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h); padding: 0 clamp(20px, 4vw, 40px);
+      background: rgba(9,24,15,0.92); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .nav-inner { max-width: 1200px; margin: 0 auto; height: 100%; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; align-items: center; gap: 9px; font-size: 16px; font-weight: 900; letter-spacing: -0.04em; text-decoration: none; }
+    .nav-logo img { width: 30px; height: 30px; border-radius: 8px; object-fit: cover; }
+    .nav-logo-text {
+      background: linear-gradient(to right, #fff 44%, var(--accent) 44%);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent; white-space: nowrap;
+    }
+    .nav-cta {
+      background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.15);
+      color: #fff; padding: 8px 20px; border-radius: 8px; font-weight: 700; font-size: 13px;
+      text-decoration: none; transition: background 0.2s;
+    }
+    .nav-cta:hover { background: rgba(255,255,255,0.18); }
+    .nav-login { text-decoration: none; color: rgba(255,255,255,0.65); font-size: 13px; font-weight: 600; margin-right: 14px; transition: color 0.2s; }
+    .nav-login:hover { color: #fff; }
+
+    .legal-hero {
+      background: var(--bg-dark);
+      padding: calc(var(--nav-h) + 64px) clamp(20px, 5vw, 56px) 72px;
+      text-align: center;
+    }
+    .legal-hero h1 {
+      font-family: var(--f-head); font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800; letter-spacing: -0.03em; color: #fff;
+      line-height: 1.1; margin-bottom: 16px;
+    }
+    .legal-hero p { font-size: 16px; color: rgba(255,255,255,0.5); }
+    .legal-body {
+      max-width: 780px; margin: 0 auto;
+      padding: 72px clamp(20px, 5vw, 56px) 96px;
+    }
+    .legal-body h2 {
+      font-family: var(--f-head); font-size: 1.35rem; font-weight: 700;
+      letter-spacing: -0.02em; color: var(--ink); margin: 48px 0 12px;
+    }
+    .legal-body h3 {
+      font-family: var(--f-head); font-size: 1.05rem; font-weight: 700;
+      color: var(--ink); margin: 28px 0 8px;
+    }
+    .legal-body h2:first-child { margin-top: 0; }
+    .legal-body p { font-size: 15px; line-height: 1.8; color: var(--ink-60); margin-bottom: 14px; }
+    .legal-body p:last-child { margin-bottom: 0; }
+    .legal-body a { color: var(--accent); text-decoration: none; }
+    .legal-body ul { margin: 8px 0 14px 20px; }
+    .legal-body ul li { font-size: 15px; line-height: 1.8; color: var(--ink-60); margin-bottom: 6px; }
+    .legal-body .caps { font-size: 14px; line-height: 1.7; color: var(--ink-60); margin-bottom: 14px; }
+
+    footer { background: var(--bg-dark-2); padding: 48px clamp(20px, 5vw, 56px); border-top: 1px solid rgba(255,255,255,0.07); }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .footer-logo { display: flex; align-items: center; gap: 9px; font-size: 15px; font-weight: 900; letter-spacing: -0.04em; text-decoration: none; }
+    .footer-logo img { width: 26px; height: 26px; border-radius: 7px; object-fit: cover; }
+    .footer-links-row { display: flex; gap: 24px; }
+    .footer-links-row a { font-size: 13px; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    .footer-links-row a:hover { color: #fff; }
+    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/logo.webp" alt="EarnTrack Logo" loading="lazy"><span class="nav-logo-text">EarnTrack</span>
+      </a>
+      <div style="display:flex;align-items:center">
+        <a href="https://app.earntrack.de" class="nav-login">Login</a>
+        <a href="https://app.earntrack.de/register" class="nav-cta">14 Tage testen</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="legal-hero">
+    <h1>Datenschutzerklärung</h1>
+    <p>Informationen zur Verarbeitung personenbezogener Daten.</p>
+  </div>
+
+  <div class="legal-body">
+
+    <h2>1. Datenschutz auf einen Blick</h2>
+
+    <h3>Allgemeine Hinweise</h3>
+    <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.</p>
+
+    <h3>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h3>
+    <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.</p>
+
+    <h3>Wie erfassen wir Ihre Daten?</h3>
+    <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
+    <p>Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.</p>
+
+    <h3>Wofür nutzen wir Ihre Daten?</h3>
+    <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. Sofern über die Website Verträge geschlossen oder angebahnt werden können, werden die übermittelten Daten auch für Vertragsangebote, Bestellungen oder sonstige Auftragsanfragen verarbeitet.</p>
+
+    <h3>Welche Rechte haben Sie bezüglich Ihrer Daten?</h3>
+    <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
+    <p>Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.</p>
+
+    <h2>2. Hosting</h2>
+
+    <h3>Externes Hosting</h3>
+    <p>Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.</p>
+    <p>Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO). Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.</p>
+    <p>Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.</p>
+    <p>Wir setzen folgenden Hoster ein:<br>Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA</p>
+
+    <h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
+
+    <h3>Datenschutz</h3>
+    <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+    <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>
+    <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+
+    <h3>Hinweis zur verantwortlichen Stelle</h3>
+    <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+    <p>
+      Solaiman Tanjaoui<br>
+      Gabelsbergstraße 5<br>
+      55118 Mainz<br>
+      Telefon: 0176 561234456<br>
+      E-Mail: <a href="mailto:info@earntrack.de">info@earntrack.de</a>
+    </p>
+    <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
+
+    <h3>Speicherdauer</h3>
+    <p>Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.</p>
+
+    <h3>Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website</h3>
+    <p>Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden Absätzen dieser Datenschutzerklärung informiert.</p>
+
+    <h3>Empfänger von personenbezogenen Daten</h3>
+    <p>Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gültigen Vertrags über Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über gemeinsame Verarbeitung geschlossen.</p>
+
+    <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+    <p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+
+    <h3>Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</h3>
+    <p class="caps">WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).</p>
+    <p class="caps">WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).</p>
+
+    <h3>Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+    <p>Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.</p>
+
+    <h3>Recht auf Datenübertragbarkeit</h3>
+    <p>Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+
+    <h3>Auskunft, Berichtigung und Löschung</h3>
+    <p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.</p>
+
+    <h3>Recht auf Einschränkung der Verarbeitung</h3>
+    <p>Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:</p>
+    <ul>
+      <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+      <li>Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.</li>
+      <li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+      <li>Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+    </ul>
+    <p>Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.</p>
+
+    <h3>SSL- bzw. TLS-Verschlüsselung</h3>
+    <p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+    <p>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p>
+
+    <h2>4. Datenerfassung auf dieser Website</h2>
+
+    <h3>Cookies</h3>
+    <p>Unsere Internetseiten verwenden so genannte „Cookies". Cookies sind kleine Datenpakete und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen oder eine automatische Löschung durch Ihren Webbrowser erfolgt.</p>
+    <p>Cookies können von uns (First-Party-Cookies) oder von Drittunternehmen stammen (sog. Third-Party-Cookies). Third-Party-Cookies ermöglichen die Einbindung bestimmter Dienstleistungen von Drittunternehmen innerhalb von Webseiten (z. B. Cookies zur Abwicklung von Zahlungsdienstleistungen).</p>
+    <p>Cookies haben verschiedene Funktionen. Zahlreiche Cookies sind technisch notwendig, da bestimmte Webseitenfunktionen ohne diese nicht funktionieren würden (z. B. die Warenkorbfunktion oder die Anzeige von Videos). Andere Cookies können zur Auswertung des Nutzerverhaltens oder zu Werbezwecken verwendet werden.</p>
+    <p>Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs, zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (z. B. für die Warenkorbfunktion) oder zur Optimierung der Website (z. B. Cookies zur Messung des Webpublikums) erforderlich sind (notwendige Cookies), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert, sofern keine andere Rechtsgrundlage angegeben wird. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von notwendigen Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste. Sofern eine Einwilligung zur Speicherung von Cookies und vergleichbaren Wiedererkennungstechnologien abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage dieser Einwilligung (Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG); die Einwilligung ist jederzeit widerrufbar.</p>
+    <p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.</p>
+    <p>Quelle: <a href="https://www.e-recht24.de" target="_blank" rel="noopener">e-recht24.de</a></p>
+
+    <h2>5. Eingesetzte Dienste und Auftragsverarbeiter</h2>
+    <p>Zum Betrieb der App EarnTrack setzen wir folgende Dienstleister ein, die in unserem Auftrag personenbezogene Daten verarbeiten (Auftragsverarbeitung nach Art. 28 DSGVO) bzw. als Empfänger im Rahmen der Vertragserfüllung Daten erhalten:</p>
+
+    <h3>Firebase / Google Cloud (Google)</h3>
+    <p>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland (Mutterkonzern: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Genutzt für Nutzerkonto-Authentifizierung, Datenbank (Firestore), Datei-Speicherung (Storage), Server-Funktionen (Cloud Functions) sowie den Versand von Verifizierungs- und Passwort-Reset-E-Mails über Google-SMTP. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung). Drittlandtransfer: Google ist unter dem EU-US Data Privacy Framework (DPF) zertifiziert; zusätzlich kommen EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO) zum Einsatz. Die Firestore-Datenbank wird in der EU-Region betrieben.</p>
+
+    <h3>Stripe (Zahlungsabwicklung)</h3>
+    <p>Stripe Payments Europe, Ltd., 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Irland. Genutzt zur Abwicklung der Abonnement-Zahlungen (SEPA-Lastschrift/Kartenzahlung). Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung). Es werden Name, E-Mail-Adresse, Zahlungsdaten und Abonnement-Informationen übermittelt.</p>
+
+    <h3>Sentry (Fehlererfassung)</h3>
+    <p>Functional Software, Inc. (d/b/a Sentry), 132 Hawthorne Street, San Francisco, CA 94107, USA. Genutzt zur automatisierten Erfassung von Programmfehlern und Abstürzen, um die technische Stabilität der App sicherzustellen. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an fehlerfreiem Betrieb). Personenbezogene Daten in Fehlerberichten (z. B. IP-Adresse, E-Mail) werden vor der Übermittlung technisch reduziert (Scrubbing). Drittlandtransfer: EU-Standardvertragsklauseln.</p>
+
+    <h3>EmailJS (Benachrichtigungs-E-Mails)</h3>
+    <p>EmailJS Corp., USA. Genutzt für den Versand bestimmter Benachrichtigungs-E-Mails innerhalb der App (z. B. Team- und Projekt-Benachrichtigungen). Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <a href="/" class="footer-logo">
+      <img src="/logo.webp" alt="EarnTrack" loading="lazy" width="26" height="26"><span class="nav-logo-text">EarnTrack</span>
+    </a>
+    <div class="footer-links-row">
+      <a href="/impressum">Impressum</a>
+      <a href="/datenschutz">Datenschutz</a>
+      <a href="/agb">AGB</a>
+      <a href="/">Startseite</a>
+    </div>
+    <span class="footer-copy">© 2026 EarnTrack</span>
+    <div class="et-social">
+      <style>
+        .et-social{display:flex;align-items:center;gap:10px;flex-wrap:wrap;width:100%;margin-top:4px}
+        .et-social .et-social-label{font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+        .et-social a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);color:rgba(255,255,255,0.7);margin:0;transition:background .2s,color .2s,border-color .2s,transform .2s}
+        .et-social a:hover{background:rgba(16,214,163,0.15);color:#10D6A3;border-color:rgba(16,214,163,0.35);transform:translateY(-2px)}
+        .et-social svg{width:19px;height:19px}
+      </style>
+      <span class="et-social-label">Folge uns</span>
+      <a href="https://www.instagram.com/earntrack_official" target="_blank" rel="noopener noreferrer" aria-label="EarnTrack auf Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.tiktok.com/@earntrack0" target="_blank" rel="noopener noreferrer" aria-label="EarnTrack auf TikTok"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M16.6 3h-2.7v13.1a2.9 2.9 0 1 1-2.5-2.9v-2.7a5.6 5.6 0 1 0 5.2 5.6V9.7c1 .7 2.2 1.1 3.5 1.1V8.1c-1.9-.3-3.2-1.9-3.5-4z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

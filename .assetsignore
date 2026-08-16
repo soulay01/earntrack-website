@@ -1,0 +1,9 @@
+.env.local
+.env
+.vercel
+vercel.json
+SEO-PLAN.md
+OFF-PAGE-PLAN.md
+submission-tracker.csv
+README.md
+.git

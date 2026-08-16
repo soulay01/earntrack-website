@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seite nicht gefunden | EarnTrack</title>
+  <meta name="description" content="Diese Seite existiert nicht. Zurück zur EarnTrack Startseite.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-icon-new.png">
+  <link rel="preload" href="/assets/fonts/bricolage-grotesque-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Bricolage Grotesque';
+      font-style: normal; font-weight: 400 800; font-display: swap;
+      src: url('/assets/fonts/bricolage-grotesque-var.woff2') format('woff2-variations'), url('/assets/fonts/bricolage-grotesque-var.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal; font-weight: 400 800; font-display: swap;
+      src: url('/assets/fonts/plus-jakarta-sans-var.woff2') format('woff2-variations'), url('/assets/fonts/plus-jakarta-sans-var.woff2') format('woff2');
+    }
+    :root {
+      --bg-dark: #09180F; --bg-dark-2: #0D2018; --accent: #10D6A3; --accent-dim: #0EC494;
+      --f-head: 'Bricolage Grotesque', system-ui, sans-serif; --f-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --nav-h: 64px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { overflow-x: hidden; }
+    body {
+      font-family: var(--f-body); background: var(--bg-dark); color: #fff;
+      min-height: 100vh; display: flex; flex-direction: column; -webkit-font-smoothing: antialiased;
+    }
+    .nav {
+      height: var(--nav-h); display: flex; align-items: center;
+      padding: 0 clamp(20px, 4vw, 40px); border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 9px; font-size: 16px; font-weight: 900; letter-spacing: -0.04em; color: #fff; text-decoration: none; font-family: var(--f-head); }
+    .nav-logo img { width: 28px; height: 28px; border-radius: 7px; object-fit: cover; }
+    main {
+      flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 40px 24px;
+    }
+    .code {
+      font-family: var(--f-head); font-weight: 800; letter-spacing: -0.03em;
+      font-size: clamp(4rem, 12vw, 7rem); line-height: 1; color: var(--accent); margin-bottom: 12px;
+    }
+    h1 { font-family: var(--f-head); font-weight: 800; font-size: clamp(1.4rem, 3vw, 2rem); letter-spacing: -0.02em; margin-bottom: 14px; }
+    p { color: rgba(255,255,255,0.6); font-size: 15px; line-height: 1.6; max-width: 440px; margin-bottom: 32px; }
+    .btn-row { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-bottom: 40px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #0B1F1A;
+      padding: 13px 26px; border-radius: 12px; font-weight: 900; font-size: 15px; text-decoration: none;
+      transition: transform 0.2s, background 0.2s; box-shadow: 0 8px 32px rgba(16,214,163,0.3);
+    }
+    .btn-primary:hover { background: var(--accent-dim); transform: translateY(-2px); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14); color: #fff; padding: 13px 26px; border-radius: 12px;
+      font-weight: 700; font-size: 15px; text-decoration: none; transition: background 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.12); }
+    .links { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; font-size: 13px; }
+    .links a { color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+    .links a:hover { color: var(--accent); }
+    footer { text-align: center; padding: 20px; font-size: 12px; color: rgba(255,255,255,0.3); }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a href="/" class="nav-logo">
+      <img src="/logo.webp" alt="EarnTrack Logo" width="28" height="28">EarnTrack
+    </a>
+  </nav>
+  <main>
+    <div class="code">404</div>
+    <h1>Diese Seite gibt es nicht</h1>
+    <p>Der Link ist entweder veraltet oder es hat sich ein Tippfehler eingeschlichen. Auf der Startseite findest du alles zu EarnTrack.</p>
+    <div class="btn-row">
+      <a href="/" class="btn-primary">Zur Startseite</a>
+      <a href="https://app.earntrack.de/demo" class="btn-ghost">14 Tage kostenlos testen</a>
+    </div>
+    <nav class="links" aria-label="Weitere Seiten">
+      <a href="/handwerker-software-vergleich">Software-Vergleich</a>
+      <a href="/zeiterfassung-handwerker">Zeiterfassung</a>
+      <a href="/kostenvoranschlag-handwerker">Kostenvoranschlag</a>
+      <a href="/impressum">Impressum</a>
+    </nav>
+  </main>
+  <footer>© 2026 EarnTrack</footer>
+</body>
+</html>
