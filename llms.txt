@@ -9,6 +9,7 @@
 - [WinWorker Alternative](https://earntrack.de/winworker-alternative): EarnTrack als transparente, monatlich kündbare WinWorker-Alternative – Preise, Funktionen und Wechsel-Anleitung
 - [Kalkulation für Handwerker](https://earntrack.de/handwerker-kalkulation): Stundensatz berechnen, Zuschlagskalkulation, Vor- und Nachkalkulation mit dem Profit Score
 - [Stundenzettel App für Handwerker](https://earntrack.de/stundenzettel-app-handwerker): Digitale Arbeitszeiterfassung nach BAG 2022, Stundenzettel ohne Zettelchaos
+- [Rechnungsprogramm für Handwerker](https://earntrack.de/rechnungsprogramm-handwerker): Rechnungen aus Zeiten &amp; Material, Pflichtangaben, Abschlagsrechnung, Mahnwesen, E-Rechnung
 - [Web-App](https://app.earntrack.de): Login und kostenlose Testphase
 - [Impressum](https://earntrack.de/impressum)
 - [Datenschutz](https://earntrack.de/datenschutz)
