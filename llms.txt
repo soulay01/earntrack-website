@@ -7,8 +7,14 @@
 - [Plancraft Alternative](https://earntrack.de/plancraft-alternative): EarnTrack als günstigere, monatlich kündbare Plancraft-Alternative – Preise, Funktionen und Wechsel-Anleitung
 - [ToolTime Alternative](https://earntrack.de/tooltime-alternative): EarnTrack als günstigere ToolTime-Alternative ohne versteckte Kosten – Preise, Funktionen und Wechsel-Anleitung
 - [WinWorker Alternative](https://earntrack.de/winworker-alternative): EarnTrack als transparente, monatlich kündbare WinWorker-Alternative – Preise, Funktionen und Wechsel-Anleitung
+
 - [Kalkulation für Handwerker](https://earntrack.de/handwerker-kalkulation): Stundensatz berechnen, Zuschlagskalkulation, Vor- und Nachkalkulation mit dem Profit Score
 - [Stundenzettel App für Handwerker](https://earntrack.de/stundenzettel-app-handwerker): Digitale Arbeitszeiterfassung nach BAG 2022, Stundenzettel ohne Zettelchaos
+- [Angebotssoftware für Handwerker](https://earntrack.de/angebotssoftware-handwerker): Angebote schnell & professionell erstellen, versenden und in Rechnung umwandeln
+- [Arbeitszeiterfassung Pflicht 2026](https://earntrack.de/arbeitszeiterfassung-handwerker): EuGH & BAG-Vorlage, was sich für Handwerksbetriebe ändert
+- [Handwerker-Software Kosten](https://earntrack.de/handwerker-software-kosten): Preise, versteckte Kosten und Empfehlungen im Vergleich
+- [Meisterwerk Alternative](https://earntrack.de/meisterwerk-alternative): EarnTrack als günstigere Alternative zu Meisterwerk – alles in einem Preis
+- [Lexware Alternative](https://earntrack.de/lexware-alternative): EarnTrack als Komplettlösung für Handwerker – mehr als nur Buchhaltung
 - [Rechnungsprogramm für Handwerker](https://earntrack.de/rechnungsprogramm-handwerker): Rechnungen aus Zeiten &amp; Material, Pflichtangaben, Abschlagsrechnung, Mahnwesen, E-Rechnung
 - [Web-App](https://app.earntrack.de): Login und kostenlose Testphase
 - [Impressum](https://earntrack.de/impressum)
@@ -27,5 +33,5 @@
 ## Fakten
 - Zielgruppe: Handwerksbetriebe mit 1–50 Mitarbeitern (Sanitär, Elektro, Maler, Dachdecker, GaLaBau u. a.)
 - Plattformen: Web-App, iOS (App Store), Android
-- Abos monatlich kündbar; Mitarbeiter-Limits: Solo 2, Team 5, Business unbegrenzt
+- Abos monatlich kündbar; Nutzer-Limits: Solo 3 (Chef + 2 Mitarbeiter), Team 5, Business unbegrenzt
 - Offizieller Produktname: EarnTrack Business Manager (nicht zu verwechseln mit gleichnamigen Einkommens-Tracker-Apps)
